@@ -66,11 +66,60 @@
       background: #e8e8e6;
     }
 
+    .search-box {
+      position: relative;
+      width: min(100%, 340px);
+      margin-top: 30px;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 14px;
+      height: 14px;
+      color: #858583;
+      pointer-events: none;
+      transform: translateY(-50%);
+    }
+
+    .search-input {
+      width: 100%;
+      min-height: 34px;
+      padding: 6px 10px 6px 31px;
+      border: 1px solid #dededb;
+      border-radius: 7px;
+      outline: 0;
+      color: var(--ink);
+      background: #fbfbfa;
+      font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+      font-size: 0.82rem;
+      line-height: 1.4;
+      box-shadow: inset 0 1px 2px rgba(36, 36, 36, 0.025);
+      transition: border-color 140ms ease, box-shadow 140ms ease, background 140ms ease;
+    }
+
+    .search-input::placeholder {
+      color: #8a8a87;
+      opacity: 1;
+    }
+
+    .search-input:hover {
+      border-color: #d2d2ce;
+      background: #ffffff;
+    }
+
+    .search-input:focus {
+      border-color: #aaa9a4;
+      background: #ffffff;
+      box-shadow: 0 0 0 2px rgba(36, 36, 36, 0.07);
+    }
+
     .topic-filter {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin: 40px 0 50px;
+      margin: 30px 0 50px;
       padding: 0;
       border: 0;
     }
@@ -294,9 +343,14 @@
         font-size: clamp(2.15rem, 13vw, 3.2rem);
       }
 
+      .search-box {
+        width: 100%;
+        margin-top: 26px;
+      }
+
       .topic-filter {
         gap: 5px;
-        margin: 32px 0 40px;
+        margin: 26px 0 40px;
       }
 
       .topic-filter button {
@@ -331,6 +385,22 @@
   <div class="page-shell">
     <header>
       <h1 class="page-title">GP Example Banks</h1>
+
+      <div class="search-box" role="search">
+        <label class="visually-hidden" for="example-search">Search examples</label>
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"></circle>
+          <path d="m16 16 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+        </svg>
+        <input
+          class="search-input"
+          id="example-search"
+          type="search"
+          placeholder="Search examples"
+          autocomplete="off"
+          aria-describedby="result-status"
+        >
+      </div>
     </header>
 
     <nav class="topic-filter" id="topic-filter" aria-label="Filter examples by topic"></nav>
@@ -418,6 +488,7 @@ During the global vaccine rollout, wealthy states secured large supplies while m
       const filterRoot = document.getElementById("topic-filter");
       const cardGrid = document.getElementById("card-grid");
       const resultStatus = document.getElementById("result-status");
+      const searchInput = document.getElementById("example-search");
       const selectedTopics = new Set();
       let examples = [];
 
@@ -621,9 +692,20 @@ During the global vaccine rollout, wealthy states secured large supplies while m
       }
 
       function renderCards() {
-        const filteredExamples = examples.filter((example) =>
-          [...selectedTopics].every((topic) => example.tags.includes(topic))
-        );
+        const searchTerms = searchInput.value
+          .trim()
+          .toLocaleLowerCase()
+          .split(/\s+/)
+          .filter(Boolean);
+        const filteredExamples = examples.filter((example) => {
+          const hasSelectedTopics = [...selectedTopics].every((topic) =>
+            example.tags.includes(topic)
+          );
+          const searchableText = `${example.markdown} ${example.tags.join(" ")}`
+            .toLocaleLowerCase();
+          const matchesSearch = searchTerms.every((term) => searchableText.includes(term));
+          return hasSelectedTopics && matchesSearch;
+        });
         const fragment = document.createDocumentFragment();
 
         for (const example of filteredExamples) {
@@ -652,7 +734,13 @@ During the global vaccine rollout, wealthy states secured large supplies while m
         if (!filteredExamples.length) {
           const emptyState = document.createElement("p");
           emptyState.className = "empty-state";
-          emptyState.textContent = "No examples contain all of the selected topics.";
+          if (searchTerms.length && selectedTopics.size) {
+            emptyState.textContent = "No examples match your search and selected topics.";
+          } else if (searchTerms.length) {
+            emptyState.textContent = "No examples match your search.";
+          } else {
+            emptyState.textContent = "No examples contain all of the selected topics.";
+          }
           fragment.append(emptyState);
         }
 
@@ -675,6 +763,14 @@ During the global vaccine rollout, wealthy states secured large supplies while m
 
         renderFilters();
         renderCards();
+      });
+
+      searchInput.addEventListener("input", renderCards);
+      searchInput.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && searchInput.value) {
+          searchInput.value = "";
+          renderCards();
+        }
       });
 
       loadExamples().then((loadedExamples) => {
