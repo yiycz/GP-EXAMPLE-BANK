@@ -1,5 +1,5 @@
 ---
-tags: [Art, Technology, Investment, Commercialisation]
+tags: [Art, Technology, Finance, Commercialisation]
 ---
 
 ## The NFT Art Bubble
