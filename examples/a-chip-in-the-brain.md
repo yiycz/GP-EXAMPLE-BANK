@@ -1,5 +1,5 @@
 ---
-tags: [Science & Technology, Technology, Healthcare, Brain-Computer Interfaces, Ethics]
+tags: [Science, Technology, Healthcare, Ethics]
 ---
 
 ## A Chip in the Brain
