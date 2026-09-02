@@ -1,5 +1,5 @@
 ---
-tags: [Censorship, Regulation, Technology, Singapore]
+tags: [Censorship, Regulation, Technology, Singapore, Social Media]
 ---
 
 ## POFMA direction against Goh Meng Seng (2024)
