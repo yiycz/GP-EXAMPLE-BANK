@@ -1,5 +1,5 @@
 ---
-tags: [Art, Technology, Tourism, Audience Engagement, Education]
+tags: [Art, Technology, Tourism, Education]
 ---
 
 ## Museums Reinvent Themselves
