@@ -1,5 +1,5 @@
 ---
-tags: [Media, Social Media, Mental Health, Commercialisation, Technology]
+tags: [Social Media, Mental Health, Commercialisation, Technology]
 ---
 
 ## Doomscrolling and the Attention Economy
