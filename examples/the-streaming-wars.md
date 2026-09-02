@@ -1,10 +1,5 @@
 ---
-tags:
-  - Media
-  - New Media
-  - Commercialisation
-  - Technology
-  - Audience Engagement
+tags: [Media, New Media, Commercialisation, Technology, Audience Engagement]
 ---
 
 ## The Streaming Wars
