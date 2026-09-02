@@ -1,5 +1,5 @@
 ---
-tags: [Media, Technology, Investment, Commercialisation, Regulation]
+tags: [Technology, Finance, Commercialisation, Regulation]
 ---
 
 ## Robinhood and Gamified Trading
