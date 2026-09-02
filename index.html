@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A minimal, tag-filtered General Paper example bank.">
+  <meta name="gp-examples-manifest" content="./examples/index.json">
+  <title>GP Example Banks</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #242424;
+      --muted: #686868;
+      --line: #e6e6e6;
+      --paper: #ffffff;
+      --canvas: #ffffff;
+      --shadow: inset 0 1px 2px rgba(36, 36, 36, 0.025);
+      --radius: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-width: 320px;
+      background: var(--canvas);
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .page-shell {
+      width: min(820px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 68px 0 76px;
+    }
+
+    .page-title {
+      width: fit-content;
+      max-width: 100%;
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(1.95rem, 4vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.02;
+    }
+
+    .page-title::selection {
+      color: var(--ink);
+      background: #e8e8e6;
+    }
+
+    .topic-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 40px 0 50px;
+      padding: 0;
+      border: 0;
+    }
+
+    .topic-filter button {
+      min-height: 27px;
+      padding: 3px 8px;
+      border: 0;
+      border-radius: 5px;
+      color: var(--tag-ink, #5f5f5d);
+      background: var(--tag-bg, #ebeced);
+      cursor: pointer;
+      font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.25;
+      box-shadow: inset 0 0 0 1px transparent;
+      transition: filter 140ms ease, box-shadow 140ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .topic-filter button:hover {
+      filter: brightness(0.97);
+    }
+
+    .topic-filter button[aria-pressed="true"] {
+      color: var(--tag-ink, #4f4f4d);
+      background: var(--tag-bg-active, #dfe0e1);
+      box-shadow: inset 0 0 0 1.5px currentColor;
+    }
+
+    .topic-filter button:focus-visible {
+      outline: 2px solid rgba(36, 36, 36, 0.35);
+      outline-offset: 2px;
+    }
+
+    [data-tone="grey"] {
+      --tag-bg: #ebeced;
+      --tag-bg-active: #dfe0e1;
+      --tag-ink: #5f5f5d;
+    }
+
+    [data-tone="blue"] {
+      --tag-bg: #e7edf4;
+      --tag-bg-active: #d8e3ef;
+      --tag-ink: #4f647a;
+    }
+
+    [data-tone="rose"] {
+      --tag-bg: #f1e8ef;
+      --tag-bg-active: #e8dce5;
+      --tag-ink: #725f6d;
+    }
+
+    [data-tone="sand"] {
+      --tag-bg: #f0eee5;
+      --tag-bg-active: #e6e2d4;
+      --tag-ink: #6d6754;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .example-card {
+      position: relative;
+      display: flex;
+      min-height: 0;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(var(--paper), var(--paper)) padding-box,
+        linear-gradient(145deg, #dededa, #f1f1ef 52%, #e3e3df) border-box;
+      box-shadow: var(--shadow);
+      transition: box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .example-card:hover {
+      background:
+        linear-gradient(var(--paper), var(--paper)) padding-box,
+        linear-gradient(145deg, #d1d1cc, #ebebe8 52%, #d7d7d2) border-box;
+      box-shadow: inset 0 1px 2px rgba(36, 36, 36, 0.03), 0 3px 12px rgba(36, 36, 36, 0.025);
+    }
+
+    .card-content {
+      display: grid;
+      flex: 1;
+      grid-template-columns: minmax(165px, 0.78fr) minmax(0, 2.22fr);
+      gap: 8px 24px;
+      padding: 16px 18px 13px;
+    }
+
+    .card-content h2,
+    .card-content h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.02rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+
+    .card-content h3 {
+      font-size: 1.08rem;
+    }
+
+    .card-content > h2:first-child {
+      grid-column: 1;
+      grid-row: 1 / span 20;
+    }
+
+    .card-content > h2:first-child ~ * {
+      grid-column: 2;
+    }
+
+    .card-content p {
+      margin: 0;
+      color: var(--ink);
+    }
+
+    .card-content p:last-child,
+    .card-content ul:last-child,
+    .card-content blockquote:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-content ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: var(--ink);
+    }
+
+    .card-content blockquote {
+      margin: 0;
+      padding-left: 14px;
+      border-left: 3px solid #d4d4d2;
+      color: var(--ink);
+    }
+
+    .card-content strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .card-content a {
+      color: var(--ink);
+      text-underline-offset: 3px;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 0 18px;
+      padding: 8px 0 10px;
+      border-top: 1px solid #ededee;
+    }
+
+    .card-tag {
+      padding: 1px 6px;
+      border-radius: 4px;
+      color: var(--tag-ink, #5f5f5d);
+      background: var(--tag-bg, #ebeced);
+      font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      margin: 18px 0 0;
+      padding: 56px 24px;
+      border: 1px dashed #d7d0da;
+      border-radius: var(--radius);
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.55);
+      text-align: center;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    @media (max-width: 760px) {
+      .card-content {
+        display: block;
+      }
+
+      .card-content h2,
+      .card-content h3 {
+        margin-bottom: 12px;
+      }
+
+      .card-content p,
+      .card-content ul,
+      .card-content blockquote {
+        margin-bottom: 11px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .page-shell {
+        width: min(100% - 32px, 820px);
+        padding: 50px 0 58px;
+      }
+
+      .page-title {
+        font-size: clamp(2.15rem, 13vw, 3.2rem);
+      }
+
+      .topic-filter {
+        gap: 5px;
+        margin: 32px 0 40px;
+      }
+
+      .topic-filter button {
+        min-height: 27px;
+        padding: 3px 8px;
+      }
+
+      .example-card {
+        min-height: 0;
+      }
+
+      .card-content {
+        padding: 15px 16px 12px;
+      }
+
+      .card-tags {
+        margin: 0 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header>
+      <h1 class="page-title">GP Example Banks</h1>
+    </header>
+
+    <nav class="topic-filter" id="topic-filter" aria-label="Filter examples by topic"></nav>
+
+    <main>
+      <div class="card-grid" id="card-grid"></div>
+      <p class="visually-hidden" id="result-status" role="status" aria-live="polite"></p>
+    </main>
+  </div>
+
+  <!--
+    Preview data. On GitHub Pages, add Markdown paths to examples/index.json.
+    When that manifest exists, those external files automatically replace these samples.
+  -->
+  <script type="text/markdown" class="example-source">
+---
+tags: [Technology, Media, Politics, Ethics]
+---
+## Cambridge Analytica and political profiling
+
+Cambridge Analytica harvested data from millions of Facebook profiles without informed consent and used it to build tools for political advertising.
+
+**Use:** This example illustrates how weak data governance can allow digital platforms to threaten privacy, electoral fairness and public trust.
+  </script>
+
+  <script type="text/markdown" class="example-source">
+---
+tags: [Singapore, Environment, Economy, Politics]
+---
+## Singapore's carbon tax
+
+Singapore introduced a carbon tax to make major emitters account for the social cost of their emissions while encouraging investment in cleaner technology.
+
+**Use:** It shows how market-based policies can reconcile environmental protection with the practical demands of economic development.
+  </script>
+
+  <script type="text/markdown" class="example-source">
+---
+tags: [Science, Technology, Ethics]
+---
+## He Jiankui's gene-edited babies
+
+Chinese scientist He Jiankui announced the birth of gene-edited babies after altering embryos using CRISPR, provoking widespread scientific condemnation.
+
+**Use:** The case demonstrates why scientific capability must be constrained by ethical oversight, transparency and respect for consent.
+  </script>
+
+  <script type="text/markdown" class="example-source">
+---
+tags: [Education, Politics, Equality]
+---
+## Finland's approach to education
+
+Finland combines highly trained teachers with relatively low reliance on standardised testing and an emphasis on equal access across schools.
+
+**Use:** It challenges the assumption that intense competition and frequent examinations are necessary for strong educational outcomes.
+  </script>
+
+  <script type="text/markdown" class="example-source">
+---
+tags: [Environment, Politics, Law]
+---
+## Climate litigation against governments
+
+Citizens and advocacy groups have increasingly used the courts to challenge governments whose climate policies fail to meet legal or constitutional duties.
+
+**Use:** Climate litigation shows how legal institutions can hold political leaders accountable when short electoral cycles discourage long-term action.
+  </script>
+
+  <script type="text/markdown" class="example-source">
+---
+tags: [Science, Ethics, Economy, Equality]
+---
+## Unequal access to COVID-19 vaccines
+
+During the global vaccine rollout, wealthy states secured large supplies while many lower-income countries struggled to obtain doses promptly.
+
+**Use:** This reveals how market power and national self-interest can undermine fairness even when scientific progress produces a global public good.
+  </script>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const filterRoot = document.getElementById("topic-filter");
+      const cardGrid = document.getElementById("card-grid");
+      const resultStatus = document.getElementById("result-status");
+      const selectedTopics = new Set();
+      let examples = [];
+
+      function parseTags(value) {
+        return value
+          .replace(/^\[/, "")
+          .replace(/\]$/, "")
+          .split(",")
+          .map((tag) => tag.trim().replace(/^['\"]|['\"]$/g, ""))
+          .filter(Boolean);
+      }
+
+      function parseExample(source) {
+        const normalised = source.replace(/\r\n?/g, "\n").trim();
+        const match = normalised.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
+
+        if (!match) {
+          return { tags: [], markdown: normalised };
+        }
+
+        const frontMatter = match[1];
+        const tagLine = frontMatter.match(/^tags\s*:\s*(.+)$/mi);
+        return {
+          tags: tagLine ? parseTags(tagLine[1].trim()) : [],
+          markdown: match[2].trim()
+        };
+      }
+
+      function appendInlineMarkdown(parent, text) {
+        const tokenPattern = /(\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g;
+        let cursor = 0;
+
+        for (const match of text.matchAll(tokenPattern)) {
+          parent.append(document.createTextNode(text.slice(cursor, match.index)));
+          const token = match[0];
+
+          if (token.startsWith("**")) {
+            const strong = document.createElement("strong");
+            strong.textContent = token.slice(2, -2);
+            parent.append(strong);
+          } else if (token.startsWith("`")) {
+            const code = document.createElement("code");
+            code.textContent = token.slice(1, -1);
+            parent.append(code);
+          } else if (token.startsWith("*")) {
+            const emphasis = document.createElement("em");
+            emphasis.textContent = token.slice(1, -1);
+            parent.append(emphasis);
+          } else {
+            const linkParts = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+            const anchor = document.createElement("a");
+            anchor.textContent = linkParts[1];
+            try {
+              const url = new URL(linkParts[2], window.location.href);
+              if (["http:", "https:"].includes(url.protocol)) {
+                anchor.href = url.href;
+                anchor.rel = "noopener noreferrer";
+                anchor.target = "_blank";
+              }
+            } catch (_) {
+              // Invalid links remain readable text without navigation.
+            }
+            parent.append(anchor);
+          }
+
+          cursor = match.index + token.length;
+        }
+
+        parent.append(document.createTextNode(text.slice(cursor)));
+      }
+
+      function renderMarkdown(markdown) {
+        const fragment = document.createDocumentFragment();
+        const lines = markdown.split("\n");
+        let paragraphLines = [];
+        let list = null;
+
+        function flushParagraph() {
+          if (!paragraphLines.length) return;
+          const paragraph = document.createElement("p");
+          appendInlineMarkdown(paragraph, paragraphLines.join(" "));
+          fragment.append(paragraph);
+          paragraphLines = [];
+        }
+
+        function flushList() {
+          if (!list) return;
+          fragment.append(list);
+          list = null;
+        }
+
+        for (const rawLine of lines) {
+          const line = rawLine.trim();
+
+          if (!line) {
+            flushParagraph();
+            flushList();
+            continue;
+          }
+
+          const heading = line.match(/^(#{2,3})\s+(.+)$/);
+          if (heading) {
+            flushParagraph();
+            flushList();
+            const element = document.createElement(heading[1].length === 2 ? "h2" : "h3");
+            appendInlineMarkdown(element, heading[2]);
+            fragment.append(element);
+            continue;
+          }
+
+          if (line.startsWith("- ")) {
+            flushParagraph();
+            if (!list) list = document.createElement("ul");
+            const item = document.createElement("li");
+            appendInlineMarkdown(item, line.slice(2));
+            list.append(item);
+            continue;
+          }
+
+          if (line.startsWith("> ")) {
+            flushParagraph();
+            flushList();
+            const quote = document.createElement("blockquote");
+            appendInlineMarkdown(quote, line.slice(2));
+            fragment.append(quote);
+            continue;
+          }
+
+          paragraphLines.push(line);
+        }
+
+        flushParagraph();
+        flushList();
+        return fragment;
+      }
+
+      async function loadExamples() {
+        const embeddedSources = [...document.querySelectorAll(".example-source")]
+          .map((node) => node.textContent);
+        const manifestPath = document
+          .querySelector('meta[name="gp-examples-manifest"]')
+          ?.getAttribute("content");
+
+        if (manifestPath && window.location.protocol !== "file:") {
+          try {
+            const manifestResponse = await fetch(manifestPath, { cache: "no-cache" });
+            if (manifestResponse.ok) {
+              const manifest = await manifestResponse.json();
+              const paths = Array.isArray(manifest) ? manifest : manifest.files;
+              if (Array.isArray(paths) && paths.length) {
+                const sources = await Promise.all(
+                  paths.map(async (path) => {
+                    const response = await fetch(new URL(path, manifestResponse.url));
+                    if (!response.ok) throw new Error(`Could not load ${path}`);
+                    return response.text();
+                  })
+                );
+                return sources.map(parseExample);
+              }
+            }
+          } catch (_) {
+            // The embedded examples keep this preview usable without a web server.
+          }
+        }
+
+        return embeddedSources.map(parseExample);
+      }
+
+      function topicSort(a, b) {
+        return a.localeCompare(b, undefined, { sensitivity: "base" });
+      }
+
+      function toneForTopic(topic) {
+        if (!topic) return "grey";
+        const tones = ["grey", "blue", "rose", "sand"];
+        const hash = [...topic].reduce((total, character) => total + character.charCodeAt(0), 0);
+        return tones[hash % tones.length];
+      }
+
+      function renderFilters() {
+        const allTopics = [...new Set(examples.flatMap((example) => example.tags))].sort(topicSort);
+        filterRoot.replaceChildren();
+
+        const allButton = document.createElement("button");
+        allButton.type = "button";
+        allButton.textContent = "All";
+        allButton.dataset.topic = "";
+        allButton.dataset.tone = "grey";
+        allButton.setAttribute("aria-pressed", String(selectedTopics.size === 0));
+        filterRoot.append(allButton);
+
+        for (const topic of allTopics) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.textContent = topic;
+          button.dataset.topic = topic;
+          button.dataset.tone = toneForTopic(topic);
+          button.setAttribute("aria-pressed", String(selectedTopics.has(topic)));
+          filterRoot.append(button);
+        }
+      }
+
+      function renderCards() {
+        const filteredExamples = examples.filter((example) =>
+          [...selectedTopics].every((topic) => example.tags.includes(topic))
+        );
+        const fragment = document.createDocumentFragment();
+
+        for (const example of filteredExamples) {
+          const article = document.createElement("article");
+          article.className = "example-card";
+
+          const content = document.createElement("div");
+          content.className = "card-content";
+          content.append(renderMarkdown(example.markdown));
+          article.append(content);
+
+          const footer = document.createElement("footer");
+          footer.className = "card-tags";
+          footer.setAttribute("aria-label", "Example topics");
+          for (const tag of example.tags) {
+            const label = document.createElement("span");
+            label.className = "card-tag";
+            label.textContent = tag;
+            label.dataset.tone = toneForTopic(tag);
+            footer.append(label);
+          }
+          article.append(footer);
+          fragment.append(article);
+        }
+
+        if (!filteredExamples.length) {
+          const emptyState = document.createElement("p");
+          emptyState.className = "empty-state";
+          emptyState.textContent = "No examples contain all of the selected topics.";
+          fragment.append(emptyState);
+        }
+
+        cardGrid.replaceChildren(fragment);
+        resultStatus.textContent = `${filteredExamples.length} ${filteredExamples.length === 1 ? "example" : "examples"} shown.`;
+      }
+
+      filterRoot.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-topic]");
+        if (!button) return;
+
+        const topic = button.dataset.topic;
+        if (!topic) {
+          selectedTopics.clear();
+        } else if (selectedTopics.has(topic)) {
+          selectedTopics.delete(topic);
+        } else {
+          selectedTopics.add(topic);
+        }
+
+        renderFilters();
+        renderCards();
+      });
+
+      loadExamples().then((loadedExamples) => {
+        examples = loadedExamples;
+        renderFilters();
+        renderCards();
+      });
+    })();
+  </script>
+</body>
+</html>
