@@ -1,5 +1,5 @@
 ---
-tags: [Art, New Media, Technology, Education, Audience Engagement]
+tags: [Art, Social Media, Technology, Education]
 ---
 
 ## BookTok Brings Back Reading
