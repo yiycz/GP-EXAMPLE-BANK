@@ -1,5 +1,5 @@
 ---
-tags: [Science & Technology, Technology, Space, Commercialisation, Public Interest]
+tags: [Science, Technology, Space, Commercialisation, Public Interest, Environment]
 ---
 
 ## Catching a Rocket From the Sky
