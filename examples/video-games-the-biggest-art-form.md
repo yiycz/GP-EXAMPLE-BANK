@@ -1,5 +1,5 @@
 ---
-tags: [Art, Technology, Commercialisation, Audience Engagement]
+tags: [Art, Technology, Commercialisation]
 ---
 
 ## Video Games, the Biggest Art Form
