@@ -1,5 +1,5 @@
 ---
-tags: [Media, Social Media, Mental Health, Technology]
+tags: [Social Media, Mental Health, Technology]
 ---
 
 ## The Loneliness Paradox
