@@ -1,5 +1,5 @@
 ---
-tags: [Art, Artificial Intelligence, Technology, Creativity]
+tags: [Art, Artificial Intelligence, Technology, Creativity, Music]
 ---
 
 ## The Beatles' Last Song, Finished by AI
