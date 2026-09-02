@@ -1,5 +1,5 @@
 ---
-tags: [Science & Technology, Technology, Artificial Intelligence, Education, Misinformation]
+tags: [Science, Technology, Artificial Intelligence, Education, Misinformation]
 ---
 
 ## Generative AI Arrives
