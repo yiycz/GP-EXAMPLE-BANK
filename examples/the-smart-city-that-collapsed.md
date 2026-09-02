@@ -1,5 +1,5 @@
 ---
-tags: [Science & Technology, Technology, Smart Cities, Privacy, Data]
+tags: [Science, Technology, Smart Cities, Privacy, Data]
 ---
 
 ## The Smart City That Collapsed
