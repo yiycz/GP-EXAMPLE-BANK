@@ -1,5 +1,5 @@
 ---
-tags: [Arts, Artificial Intelligence, Technology]
+tags: [Art, Artificial Intelligence, Technology]
 ---
 
 ## Empirical Studies In The Arts
