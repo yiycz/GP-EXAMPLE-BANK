@@ -1,5 +1,5 @@
 ---
-tags: [Freedom Of Speech, Traditional Media, Politics]
+tags: [Traditional Media, Politics]
 ---
 
 ## The Murder of Jamal Khashoggi
