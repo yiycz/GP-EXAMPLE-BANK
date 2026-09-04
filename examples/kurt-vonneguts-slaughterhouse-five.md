@@ -1,5 +1,5 @@
 ---
-tags: [Censorship, Art, Freedom Of Speech]
+tags: [Censorship, Art]
 ---
 
 ## Kurt Vonnegut's Slaughterhouse-Five
