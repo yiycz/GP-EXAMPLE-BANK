@@ -1,5 +1,5 @@
 ---
-tags: [Equality, Art, Commercialisation, Film]
+tags: [Art, Commercialisation, Film]
 ---
 
 ## The Barbie Phenomenon
