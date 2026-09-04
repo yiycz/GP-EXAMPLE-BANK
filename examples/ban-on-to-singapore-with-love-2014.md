@@ -1,5 +1,5 @@
 ---
-tags: [Censorship, Freedom Of Speech, Singapore, Regulation]
+tags: [Censorship, Singapore, Regulation]
 ---
 
 ## Ban on To Singapore, with Love (2014)
