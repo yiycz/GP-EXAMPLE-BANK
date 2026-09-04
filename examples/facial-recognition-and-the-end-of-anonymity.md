@@ -1,5 +1,5 @@
 ---
-tags: [Artificial Intelligence, Privacy, Data]
+tags: [Artificial Intelligence, Privacy, Data, Ethics]
 ---
 
 ## Facial Recognition and the End of Anonymity
