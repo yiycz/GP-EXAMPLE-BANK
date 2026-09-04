@@ -8,4 +8,4 @@ A case in point is Naomi Neo, one of Singapore’s most prominent influencers. T
 
 
 
-**Use:** As affluent influencers flaunt excessive spending and lavish living, viewers may feel pressured to emulate them, leading to growing dissatisfaction with their own ordinary lives.
+**Use:** As affluent influencers flaunt excessive spending and lavish living, viewers may feel pressured to emulate them, leading to growing dissatisfaction with their own ordinary lives. World-renowned celebrities and influencers like Cristiano Ronaldo showcase luxurious lifestyles with designer clothes and private jets, while smaller creators spotlight new tech and beauty products through unboxing videos. This trend subtly normalises excessive spending and an insidious culture of consumerism. Consequently, social media pressures individuals to alter their financial decisions, amplifying their spending to portray a false image of wealth.
