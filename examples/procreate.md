@@ -2,7 +2,7 @@
 tags: [Education, Art, Technology]
 ---
 
-# Procreate
+## Procreate
 
 Contemporary software such as Procreate provides professional-grade capabilities for little to no cost, effectively consolidating a multi-thousand-dollar physical studio into ubiquitous consumer hardware like smartphones and tablets.
 
