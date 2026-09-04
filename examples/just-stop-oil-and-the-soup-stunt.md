@@ -1,5 +1,5 @@
 ---
-tags: [Environment, Art, Politics, Advocacy]
+tags: [Environment, Art, Politics, Advocacy, Social Issue]
 ---
 
 ## Just Stop Oil and the Soup Stunt
