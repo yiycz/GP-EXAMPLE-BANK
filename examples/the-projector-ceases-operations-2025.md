@@ -1,5 +1,5 @@
 ---
-tags: [Art, Singapore, Economy, Film]
+tags: [Art, Singapore, Film]
 ---
 
 ## The Projector ceases operations (2025)
