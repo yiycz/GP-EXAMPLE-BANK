@@ -1,5 +1,5 @@
 ---
-tags: [Science, Technology, Monopoly, Regulation, Commercialisation]
+tags: [Science, Technology, Regulation, Commercialisation]
 ---
 
 ## Google Ruled a Monopoly
