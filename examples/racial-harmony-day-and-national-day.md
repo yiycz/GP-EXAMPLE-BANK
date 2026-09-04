@@ -1,5 +1,5 @@
 ---
-tags: [Art, Technology, Singapore]
+tags: [Art, Cultural Identity, Singapore]
 ---
 
 ## Racial Harmony Day And National Day
