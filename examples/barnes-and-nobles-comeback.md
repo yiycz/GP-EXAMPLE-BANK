@@ -1,5 +1,5 @@
 ---
-tags: [Education, Art, Commercialisation, Book]
+tags: [Art, Commercialisation]
 ---
 
 ## Barnes & Noble's Comeback
