@@ -1,5 +1,5 @@
 ---
-tags: [Traditional Media, Equality, celebrity]
+tags: [Traditional Media, Equality, Celebrity]
 ---
 
 ## Criticism of Michelle Obama's clothing
