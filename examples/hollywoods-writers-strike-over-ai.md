@@ -1,5 +1,5 @@
 ---
-tags: [Art, Artificial Intelligence, Commercialisation, Regulation]
+tags: [Art, Artificial Intelligence, Commercialisation, Regulation, Technology]
 ---
 
 ## Hollywood's Writers Strike Over AI
