@@ -1,5 +1,5 @@
 ---
-tags: [Art, Body Image, Traditional Media]
+tags: [Celebrity, Body Image, Traditional Media]
 ---
 
 ## Body criticism directed at Hwasa
