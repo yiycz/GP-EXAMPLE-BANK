@@ -1,5 +1,5 @@
 ---
-tags: [Art, Tourism, Economy]
+tags: [Art, Tourism, Commercialisation]
 ---
 
 ## The Mona Lisa's tourism value
