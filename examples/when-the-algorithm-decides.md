@@ -1,5 +1,5 @@
 ---
-tags: [Data, Education, Equality, Artificial Intelligence]
+tags: [Data, Education,  Artificial Intelligence]
 ---
 
 ## When the Algorithm Decides
