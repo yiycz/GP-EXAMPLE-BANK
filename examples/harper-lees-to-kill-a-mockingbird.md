@@ -1,5 +1,5 @@
 ---
-tags: [Art, Censorship, Racism, Literature, Social Issue]
+tags: [Art, Censorship, Racism, Social Issue]
 ---
 
 ## Harper Lee's To Kill a Mockingbird
