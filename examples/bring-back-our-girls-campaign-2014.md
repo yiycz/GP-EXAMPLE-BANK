@@ -1,5 +1,5 @@
 ---
-tags: [Slacktivism, Politics, Social Media]
+tags: [Slacktivism, Politics, Social Media, Adovocacy, Social Issue]
 ---
 
 ## Bring Back Our Girls campaign (2014)
