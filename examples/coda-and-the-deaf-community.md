@@ -1,5 +1,5 @@
 ---
-tags: [Art, Education, Equality]
+tags: [Art, Film]
 ---
 
 ## CODA and the deaf community
