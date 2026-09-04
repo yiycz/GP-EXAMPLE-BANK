@@ -1,5 +1,5 @@
 ---
-tags: [Art, Tourism, Singapore]
+tags: [Art, Tourism, Singapore, Commercialisation]
 ---
 
 ## Coldplay and Taylor Swift concerts in Singapore (2024)
