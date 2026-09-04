@@ -1,5 +1,5 @@
 ---
-tags: [Traditional Media, Freedom, Politics, War]
+tags: [Traditional Media, Politics]
 ---
 
 ## The Pentagon Papers
