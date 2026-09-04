@@ -1,5 +1,5 @@
 ---
-tags: [Misinformation, Traditional Media, War]
+tags: [Misinformation, Traditional Media]
 ---
 
 ## BBC apology over an unverified Hamas claim (2024)
