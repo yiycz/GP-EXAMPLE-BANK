@@ -1,5 +1,5 @@
 ---
-tags: [Censorship, Freedom, Singapore]
+tags: [Censorship, Regulation, Singapore]
 ---
 
 ## Small Hours of the Night classification refusal
