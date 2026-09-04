@@ -1,5 +1,5 @@
 ---
-tags: [Education, Social Media, Statistics]
+tags: [Arts, Artificial Intelligence, Technology]
 ---
 
 ## Empirical Studies In The Arts
