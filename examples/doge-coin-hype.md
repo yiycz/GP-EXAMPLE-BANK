@@ -1,5 +1,5 @@
 ---
-tags: [Finance, Social Media, Cropto, Technology]
+tags: [Finance, Social Media, Technology]
 ---
 
 ## Doge Coin hype
