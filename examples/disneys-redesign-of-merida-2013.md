@@ -1,5 +1,5 @@
 ---
-tags: [Art, Equality, Body Image]
+tags: [Art, Film, Body Image]
 ---
 
 ## Disney's redesign of Merida (2013)
