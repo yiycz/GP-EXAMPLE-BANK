@@ -1,5 +1,5 @@
 ---
-tags: [Technology, Traditional Media, Politics, Ethics, Privacy]
+tags: [Technology, Traditional Media, Politics, Ethics, Privacy, Data]
 ---
 
 ## Cambridge Analytica and political profiling
