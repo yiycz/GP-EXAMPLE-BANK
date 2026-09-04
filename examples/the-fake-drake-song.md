@@ -1,5 +1,5 @@
 ---
-tags: [Art, Artificial Intelligence, Creativity]
+tags: [Art, Artificial Intelligence, Technology]
 ---
 
 ## The Fake Drake Song
