@@ -1,5 +1,5 @@
 ---
-tags: [Art, Politics, Advocacy]
+tags: [Art, Politics, Advocacy, Social Issue]
 ---
 
 ## Banksy's Devolved Parliament
