@@ -1,5 +1,5 @@
 ---
-tags: [Space, Science, Public Interest]
+tags: [Space, Science, Technology]
 ---
 
 ## The James Webb Space Telescope
