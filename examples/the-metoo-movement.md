@@ -1,5 +1,5 @@
 ---
-tags: [Equality, Social Media, Traditional Media, Advocacy]
+tags: [Social Media, Traditional Media, Advocacy]
 ---
 
 ## The #MeToo Movement
