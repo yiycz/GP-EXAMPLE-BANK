@@ -1,5 +1,5 @@
 ---
-tags: [Art, Traditional Media, Film, Crime]
+tags: [Art, Traditional Media, Film]
 ---
 
 ## 2012 Aurora shooting
