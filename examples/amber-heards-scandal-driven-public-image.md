@@ -1,5 +1,5 @@
 ---
-tags: [Traditional Media, Celebrities]
+tags: [Traditional Media, Celebrity]
 ---
 
 ## Amber Heard's scandal-driven public image
