@@ -1,5 +1,5 @@
 ---
-tags: [Artificial Intelligence, Environment, Science]
+tags: [Artificial Intelligence, Environment, Science, Technology]
 ---
 
 ## Nuclear Power's Comeback
