@@ -1,5 +1,5 @@
 ---
-tags: [Celebrity, Commercialisation, Social Media]
+tags: [Influencer, Commercialisation, Social Media]
 ---
 
 ## The MrBeast Machine
