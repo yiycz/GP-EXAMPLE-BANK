@@ -1,5 +1,5 @@
 ---
-tags: [Finance, Social Media, Celebrity]
+tags: [Finance, Social Media, Influencer]
 ---
 
 ## The Rise of the Finfluencer
