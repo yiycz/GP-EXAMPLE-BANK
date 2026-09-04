@@ -1,5 +1,5 @@
 ---
-tags: [Environment, Politics, Slacktivism, Advocacy]
+tags: [Environment, Politics, Slacktivism, Advocacy, Social Issue]
 ---
 
 ## Extinction Rebellion and Disruptive Protest
