@@ -1,5 +1,5 @@
 ---
-tags: [Misinformation, Commercialisation, Social Media, Celebrity]
+tags: [Misinformation, Commercialisation, Social Media, Influencer]
 ---
 
 ## The Podcast King
