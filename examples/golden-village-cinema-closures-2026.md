@@ -1,5 +1,5 @@
 ---
-tags: [Art, Singapore, Economy]
+tags: [Art, Singapore]
 ---
 
 ## Golden Village cinema closures (2026)
