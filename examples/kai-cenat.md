@@ -1,5 +1,5 @@
 ---
-tags: [Celebrity, Social Media, Racism, Online Vigilantism]
+tags: [Influencer, Social Media, Racism, Online Vigilantism]
 ---
 
 ## Kai Cenat
