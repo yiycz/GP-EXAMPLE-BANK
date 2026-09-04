@@ -1,5 +1,5 @@
 ---
-tags: [Environment, Social Media, Politics, Advocacy]
+tags: [Environment, Social Media, Politics, Advocacy, Social Issue]
 ---
 
 ## Fridays for Future
