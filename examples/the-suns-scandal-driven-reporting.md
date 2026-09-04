@@ -1,5 +1,5 @@
 ---
-tags: [Commercialisation, Traditional Media, Sensationalism]
+tags: [Commercialisation, Traditional Media]
 ---
 
 ## The Sun's scandal-driven reporting
