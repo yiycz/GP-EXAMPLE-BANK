@@ -1,5 +1,5 @@
 ---
-tags: [Social Media, Celebrity, Online Vigilantism, Finance, Luxury]
+tags: [Social Media, Influencer, Online Vigilantism, Luxury]
 ---
 
 ## Naomi Neo Criticism
