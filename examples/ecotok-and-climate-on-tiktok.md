@@ -1,5 +1,5 @@
 ---
-tags: [Education, Environment, Social Media, Advocacy]
+tags: [Education, Environment, Social Media, Advocacy, Technology]
 ---
 
 ## EcoTok and Climate on TikTok
