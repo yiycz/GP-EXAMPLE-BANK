@@ -1,5 +1,5 @@
 ---
-tags: [Artificial Intelligence, Ethics, Singapore, Racism]
+tags: [Artificial Intelligence, Ethics, Singapore, Racism, Technology]
 ---
 
 ## IMDA's AI Safety Red Teaming Challenge
