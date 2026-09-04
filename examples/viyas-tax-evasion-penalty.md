@@ -1,5 +1,5 @@
 ---
-tags: [Regulation, Celebrity, Commercialisation, Social Media]
+tags: [Regulation, Influencer, Commercialisation, Social Media]
 ---
 
 ## Viya's tax-evasion penalty
