@@ -1,5 +1,5 @@
 ---
-tags: [Art, Singapore, Policy]
+tags: [Art, Singapore, Regulation]
 ---
 
 ## National Arts Council's Arts Housing Scheme
