@@ -1,5 +1,5 @@
 ---
-tags: [Artificial Intelligence, Government, Corruption, Governance, Technology]
+tags: [Artificial Intelligence, Corruption, Technology]
 ---
 ## Albania’s AI Minister Diella
 
