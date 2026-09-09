@@ -1,5 +1,5 @@
 ---
-tags: [Art, Cultural Identity, Ethics, Museums]
+tags: [Art, Culture, Ethics, Museums]
 ---
 ## Elgin Marbles / Parthenon Sculptures Dispute
 
