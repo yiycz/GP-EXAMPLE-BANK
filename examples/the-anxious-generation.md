@@ -1,5 +1,5 @@
 ---
-tags: [Technology, Regulation, Censorship, Social Media]
+tags: [Technology, Regulation, Social Media]
 ---
 
 ## The Anxious Generation
