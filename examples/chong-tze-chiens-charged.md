@@ -1,5 +1,5 @@
 ---
-tags: [Racism, Advocacy, Art, Social Issue]
+tags: [Racism, Art, Social Issue]
 ---
 
 ## Chong Tze Chien's Charged
