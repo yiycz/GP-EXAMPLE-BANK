@@ -1,5 +1,5 @@
 ---
-tags: [Art, Politics, Advocacy, Social Issue]
+tags: [Art, Politics, Social Issue]
 ---
 
 ## Picasso's Guernica
