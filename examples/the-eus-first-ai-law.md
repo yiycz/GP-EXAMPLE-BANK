@@ -1,5 +1,5 @@
 ---
-tags: [Artificial Intelligence, Regulation, Law, Technology]
+tags: [Artificial Intelligence, Regulation, Technology]
 ---
 
 ## The EU's First AI Law
