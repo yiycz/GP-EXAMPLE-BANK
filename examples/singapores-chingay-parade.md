@@ -1,5 +1,5 @@
 ---
-tags: [Cultural Identity, Art, Singapore]
+tags: [Culture, Art, Singapore]
 ---
 
 ## Singapore's Chingay Parade
