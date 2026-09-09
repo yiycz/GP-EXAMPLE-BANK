@@ -1,5 +1,5 @@
 ---
-tags: [Art, Technology, Commercialisation, Cultural Identity]
+tags: [Art, Technology, Commercialisation, Culture]
 ---
 
 ## The Return of Vinyl
