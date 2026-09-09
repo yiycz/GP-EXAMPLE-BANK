@@ -1,5 +1,5 @@
 ---
-tags: [Law, Social Media, Politics, Misinformation]
+tags: [Social Media, Politics, Misinformation]
 ---
 
 ## Roe v. Wade Misinformation
