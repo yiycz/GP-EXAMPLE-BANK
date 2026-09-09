@@ -1,5 +1,5 @@
 ---
-tags: [Censorship, Regulation, Technology, Singapore, Social Media, Law]
+tags: [Censorship, Regulation, Technology, Singapore, Social Media]
 ---
 
 ## POFMA direction against Truth Warriors (2021)
