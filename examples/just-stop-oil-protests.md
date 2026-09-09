@@ -1,5 +1,5 @@
 ---
-tags: [Environment, Advocacy, Climate Change]
+tags: [Environment, Advocacy]
 ---
 ## Just Stop Oil Protests
 
