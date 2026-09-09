@@ -1,5 +1,5 @@
 ---
-tags: [Creativity, Art, Commercialisation, Social Issue, Advocacy]
+tags: [Art, Commercialisation, Social Issue]
 ---
 
 ## Banksy Shreds His Own Art
