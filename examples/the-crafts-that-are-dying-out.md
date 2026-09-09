@@ -1,5 +1,5 @@
 ---
-tags: [Cultural Identity, Art]
+tags: [Culture, Art]
 ---
 
 ## The Crafts That Are Dying Out
