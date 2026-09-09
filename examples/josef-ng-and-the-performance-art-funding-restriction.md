@@ -1,5 +1,5 @@
 ---
-tags: [Art, Censorship, Singapore, Advocacy, Social Issue]
+tags: [Art, Censorship, Singapore, Social Issue]
 ---
 
 ## Josef Ng and the performance-art funding restriction
