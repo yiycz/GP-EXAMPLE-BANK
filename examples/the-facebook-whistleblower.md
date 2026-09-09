@@ -1,5 +1,5 @@
 ---
-tags: [Social Media, Mental Health, Regulation]
+tags: [Social Media, Regulation]
 ---
 
 ## The Facebook Whistleblower
