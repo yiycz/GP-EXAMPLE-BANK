@@ -1,5 +1,5 @@
 ---
-tags: [Artificial Intelligence, Creativity, Art]
+tags: [Artificial Intelligence, Technology, Art]
 ---
 
 ## AI Wins an Art Prize
