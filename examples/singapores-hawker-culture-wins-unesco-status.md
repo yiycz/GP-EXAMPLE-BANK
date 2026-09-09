@@ -1,5 +1,5 @@
 ---
-tags: [Singapore, Cultural Identity, Tourism]
+tags: [Singapore, Culture, Tourism]
 ---
 
 ## Singapore's Hawker Culture Wins UNESCO Status
