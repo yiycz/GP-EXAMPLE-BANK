@@ -1,5 +1,5 @@
 ---
-tags: [Technology, Artificial Intelligence]
+tags: [Technology, Artificial Intelligence, Employment]
 ---
 
 ## The Driverless Taxi Arrives
