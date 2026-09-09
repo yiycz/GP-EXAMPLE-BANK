@@ -1,5 +1,5 @@
 ---
-tags: [Art, Cultural Identity, Politics]
+tags: [Art, Culture, Politics]
 ---
 
 ## The Parthenon Marbles Standoff
