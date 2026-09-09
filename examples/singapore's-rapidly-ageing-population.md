@@ -1,5 +1,5 @@
 ---
-tags: [Ageing, Elderly, Healthcare, Demographics, Singapore]
+tags: [Elderly, Healthcare, Singapore]
 ---
 ## Singapore's Rapidly Ageing Population
 
