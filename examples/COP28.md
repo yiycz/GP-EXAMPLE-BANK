@@ -1,5 +1,5 @@
 ---
-tags: [IR, UN, Envivronment]
+tags: [IR, UN, Environment]
 ---
 
 ## COP28
