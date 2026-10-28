@@ -1,5 +1,5 @@
 ---
-tags: [IR, Humans Rights, UN]
+tags: [IR, Human Rights, UN]
 ---
 
 ## Belize and Maldives public condemnation of Israel
