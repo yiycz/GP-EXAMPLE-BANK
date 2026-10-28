@@ -1,5 +1,5 @@
 ---
-tags: [Art, Music, Singapore, culture]
+tags: [Art, Music, Singapore, Culture]
 ---
 
 ## Liu Kang's Life by the River
