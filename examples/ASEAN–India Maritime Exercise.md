@@ -1,5 +1,5 @@
 ---
-tags: [IR, Singapre, ASEAN]
+tags: [IR, Singapore, ASEAN]
 ---
 
 ## ASEAN–India Maritime Exercise
