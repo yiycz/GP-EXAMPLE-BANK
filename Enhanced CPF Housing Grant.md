@@ -1,5 +1,5 @@
 ---
-tags: [Politics]
+tags: [Policy, Singapore, Housing]
 ---
 
 ## Enhanced CPF Housing Grant 
