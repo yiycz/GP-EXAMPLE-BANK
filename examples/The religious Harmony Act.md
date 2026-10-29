@@ -1,5 +1,5 @@
 ---
-tags: [Policy]
+tags: [Policy, Racism]
 ---
 
 ## The religious Harmony Act
