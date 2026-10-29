@@ -1,5 +1,5 @@
 ---
-tags: [Politics, Policy]
+tags: [Policy, Housing]
 ---
 
 ## Expansion of BTO Housing Supply
