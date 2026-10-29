@@ -1,5 +1,5 @@
 ---
-tags: [Policy, Income]
+tags: [Policy, Income, Singapore]
 ---
 
 ## GST Voucher Scheme
@@ -9,4 +9,3 @@ The government provides lower- and middle-income Singaporeans with financial ass
 The scheme helps mitigate the regressive impact of GST and rising living costs, benefiting approximately 1.5 million adults through cash payouts in 2026, although financial transfers provide limited long-term protection against persistent inflation.
 
 
-**Use:** 
