@@ -1,5 +1,5 @@
 ---
-tags: [Policy]
+tags: [Policy, Education, Singapore]
 ---
 
 ## Government-run kindergartens
