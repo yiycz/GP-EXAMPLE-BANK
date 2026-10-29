@@ -1,5 +1,5 @@
 ---
-tags: [Politics]
+tags: [Policy]
 ---
 
 ## The sedition act
