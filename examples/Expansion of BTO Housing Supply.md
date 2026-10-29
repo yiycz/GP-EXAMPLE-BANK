@@ -1,5 +1,5 @@
 ---
-tags: [Policy, Housing]
+tags: [Policy, Housing, Singapore]
 ---
 
 ## Expansion of BTO Housing Supply
