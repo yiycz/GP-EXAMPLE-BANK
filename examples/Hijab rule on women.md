@@ -1,5 +1,5 @@
 ---
-tags: [Politics, Freedom, Social issue]
+tags: [Politics, Freedom, Social Issue]
 ---
 
 ## Hijab rule on women
