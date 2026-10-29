@@ -1,5 +1,5 @@
 ---
-tags: [Policy]
+tags: [Policy, Singapore]
 ---
 
 ## The sedition act
