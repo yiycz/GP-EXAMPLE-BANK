@@ -1,5 +1,5 @@
 ---
-tags: [Politics,]
+tags: [Policy, Singapore]
 ---
 
 ## Dormitory Transition Scheme (2023)
