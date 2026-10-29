@@ -1,5 +1,5 @@
 ---
-tags: [Politics]
+tags: [Policy, Singapore, Racism]
 ---
 
 ## Ethic Quota in public housing
