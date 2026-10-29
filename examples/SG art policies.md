@@ -1,5 +1,5 @@
 ---
-tags: [Art, Policy]
+tags: [Art, Policy, Singapore]
 ---
 
 ## SG art policies
