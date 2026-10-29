@@ -1,5 +1,5 @@
 ---
-tags: [Policy]
+tags: [Policy, Income]
 ---
 
 ## GST Voucher Scheme
