@@ -1,5 +1,5 @@
 ---
-tags: [Art]
+tags: [Policy, Singapore, Fertility]
 ---
 
 ## Enhanced Shared Parental Leave
@@ -8,4 +8,3 @@ The government increased paid shared parental leave from six weeks in April 2025
 
 Effectiveness: The policy could encourage parenthood by reducing work-family conflicts and promoting shared caregiving responsibilities, although its success depends on employers fostering family-friendly workplace cultures.
 
-**Use:** 
